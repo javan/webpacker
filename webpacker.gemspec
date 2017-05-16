@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.add_dependency "activesupport", ">= 4.2"
   s.add_dependency "multi_json",    "~> 1.2"
   s.add_dependency "railties",      ">= 4.2"
+  s.add_dependency "childprocess"
 
   s.add_development_dependency "bundler", "~> 1.12"
 

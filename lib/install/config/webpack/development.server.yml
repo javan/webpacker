@@ -2,6 +2,7 @@
 
 default: &default
   enabled: true
+  auto_start: false
   host: localhost
   port: 8080
 

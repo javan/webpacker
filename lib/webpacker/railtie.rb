@@ -14,5 +14,9 @@ class Webpacker::Engine < ::Rails::Engine
 
     Webpacker.bootstrap
     Spring.after_fork { Webpacker.bootstrap } if defined?(Spring)
+
+    if Webpacker.env.development? && Webpacker::DevServer.auto_start?
+      Rails.application.config.middleware.use Webpacker::DevServer::RackAutoStart
+    end
   end
 end

@@ -1,4 +1,6 @@
 module Webpacker
+  autoload :DevServer, "webpacker/dev_server"
+
   extend self
 
   def bootstrap
